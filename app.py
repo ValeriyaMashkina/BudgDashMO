@@ -38,14 +38,6 @@ server.config.update(SECRET_KEY=os.urandom(12))
 
 
 
-
-#app.server.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:18FmK7@localhost:5432/BudgDashMO"
-#app.server.config["SQLALCHEMY_DATABASE_URI"] = "postgres://kcfwfqwznavpjq:9473936daf43bff3d17c1dd8ab2c28144dfbf677\
-#14cb30622e3017bbe55cdeac@ec2-34-197-188-147.compute-1.amazonaws.com:5432/d9eat64jon4dti"
-#app.server.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-#db.init_app(app)
-
-
 login_manager = LoginManager()
 login_manager.init_app(server)
 login_manager.login_view = '/login'
